@@ -9,6 +9,7 @@ const Index = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("animate-fade-in");
+            entry.target.style.opacity = "1"; // Ensure element stays visible after animation
           }
         });
       },
@@ -16,6 +17,7 @@ const Index = () => {
     );
 
     document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+      el.style.opacity = "0"; // Set initial opacity
       observer.observe(el);
     });
 
@@ -187,7 +189,7 @@ const Index = () => {
 };
 
 const Feature = ({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) => (
-  <div className="animate-on-scroll opacity-0 p-6 rounded-xl bg-background border transition-all hover:shadow-lg">
+  <div className="animate-on-scroll p-6 rounded-xl bg-background border transition-all hover:shadow-lg">
     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 text-primary">
       {icon}
     </div>
@@ -197,7 +199,7 @@ const Feature = ({ icon, title, description }: { icon: React.ReactNode; title: s
 );
 
 const Step = ({ number, title, description }: { number: string; title: string; description: string }) => (
-  <div className="animate-on-scroll opacity-0 text-center">
+  <div className="animate-on-scroll text-center">
     <div className="w-12 h-12 rounded-full bg-primary/10 text-primary font-bold text-xl flex items-center justify-center mx-auto mb-4">
       {number}
     </div>
