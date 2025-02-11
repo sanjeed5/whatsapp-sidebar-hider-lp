@@ -53,14 +53,14 @@ const Index = () => {
       <section className="pt-32 pb-16 px-4">
         <div className="container mx-auto text-center max-w-4xl">
           <span className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">
-            Boost Your Productivity on WhatsApp Web
+            Privacy-First, Open-Source Extension
           </span>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Focus on What Matters:<br />A Cleaner WhatsApp Experience
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Minimize distractions and maximize screen space with one click. Perfect for remote workers, 
-            productivity enthusiasts, and anyone seeking a more focused chat experience.
+            Minimize distractions and maximize screen space with one click. Built for privacy-conscious users, 
+            with zero data collection and fully local operation.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <a
@@ -101,8 +101,8 @@ const Index = () => {
             />
             <Feature
               icon={<CheckSquare className="w-6 h-6" />}
-              title="Secure & Private"
-              description="No data tracking, no permissions required. Your privacy comes first."
+              title="100% Private"
+              description="No data collection, no tracking, completely local operation. Your privacy is guaranteed."
             />
             <Feature
               icon={<Monitor className="w-6 h-6" />}
@@ -111,8 +111,8 @@ const Index = () => {
             />
             <Feature
               icon={<Rocket className="w-6 h-6" />}
-              title="Zero Performance Impact"
-              description="Lightweight implementation ensures WhatsApp Web runs smoothly."
+              title="Open Source"
+              description="Transparent, community-driven development. Check our GitHub for the source code."
             />
           </div>
         </div>
@@ -151,7 +151,7 @@ const Index = () => {
       {/* Social Proof */}
       <section className="py-16 bg-secondary/30">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold mb-8">Trusted by Productivity-Focused Users</h2>
+          <h2 className="text-2xl font-bold mb-8">Privacy-First & Open Source</h2>
           <div className="flex flex-wrap justify-center gap-8 max-w-2xl mx-auto">
             <div className="flex items-center gap-2">
               <CheckSquare className="w-5 h-5 text-primary" />
@@ -159,11 +159,11 @@ const Index = () => {
             </div>
             <div className="flex items-center gap-2">
               <CheckSquare className="w-5 h-5 text-primary" />
-              <span className="font-medium">No Ads</span>
+              <span className="font-medium">Zero Data Collection</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckSquare className="w-5 h-5 text-primary" />
-              <span className="font-medium">Regular Updates</span>
+              <span className="font-medium">Open Source Code</span>
             </div>
           </div>
         </div>
@@ -173,7 +173,7 @@ const Index = () => {
       <footer className="py-8 border-t">
         <div className="container mx-auto px-4 text-center">
           <p className="text-sm text-muted-foreground mb-4">
-            WhatsApp Sidebar Hider © {new Date().getFullYear()} - Enhance your WhatsApp Web experience
+            WhatsApp Sidebar Hider © {new Date().getFullYear()} - An open-source project
           </p>
           <div className="flex justify-center gap-4 text-sm text-muted-foreground">
             <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
